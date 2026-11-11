@@ -4,60 +4,55 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Coeluso - Music App</title>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <!-- ШАПКА -->
-    <header class="header">
-        <div class="container header-container">
+    <!-- ГЛАВНЫЙ ЭКРАН 1 (ШАПКА И ТЕКСТ) -->
+    <section class="hero-top">
+        <header class="header container">
             <div class="logo">
                 <img src="Logo.png" alt="Coeluso Logo">
-                <span>Coeluso</span>
             </div>
             <div class="burger-menu">
                 <span></span>
                 <span></span>
                 <span></span>
             </div>
-        </div>
-    </header>
+        </header>
 
-    <!-- ГЛАВНЫЙ ЭКРАН 1 (ТЕКСТ) -->
-    <section class="hero-text">
-        <div class="container text-center">
-            <img src="Coeluso is free PSD template-2.png" alt="Coeluso is free PSD template" class="main-title-img">
-            <img src="Coeluso is free PSD template with clean fonts and elegant Music.png" alt="Subtitle" class="subtitle-img">
+        <div class="hero-content text-center">
+            <img src="Coeluso is free PSD template-2.png" alt="Coeluso is free PSD template" class="main-title">
+            <img src="Coeluso is free PSD template with clean fonts and elegant Music.png" alt="Subtitle" class="subtitle">
             <button class="btn-outline">
                 <img src="Explore template.png" alt="Explore template">
             </button>
         </div>
     </section>
 
-    <!-- ГЛАВНЫЙ ЭКРАН 2 (ТЕЛЕФОНЫ) -->
+    <!-- ГЛАВНЫЙ ЭКРАН 2 (ТРИ ТЕЛЕФОНА) -->
     <section class="hero-phones">
-        <div class="container phones-container">
-            <img src="Graphic.png" alt="Waveform Background" class="bg-wave">
-            <img src="1.png" alt="Bg detail 1" class="bg-detail-1">
-            <img src="2.png" alt="Bg detail 2" class="bg-detail-2">
+        <div class="container relative-container">
+            <img src="Graphic.png" alt="Wave" class="bg-wave">
+            <img src="1.png" alt="Bg detail 1" class="bg-detail bg-detail-1">
+            <img src="2.png" alt="Bg detail 2" class="bg-detail bg-detail-2">
             
-            <div class="phones-wrapper">
-                <!-- Левый телефон (Login) -->
-                <div class="phone-composition phone-left">
-                    <img src="Warstwa 1.png" alt="Phone Frame" class="phone-frame">
-                    <img src="symu2.png" alt="Login Screen Background" class="phone-screen">
-                    <img src="Warstwa 2.png" alt="Login Content" class="phone-screen">
+            <div class="phones-row">
+                <!-- Левый телефон (Логин) -->
+                <div class="phone-wrapper left-phone">
+                    <img src="Warstwa 1.png" alt="Frame" class="phone-frame">
+                    <img src="symu2.png" alt="Login BG" class="phone-screen bg-screen">
+                    <img src="Warstwa 2.png" alt="Login UI" class="phone-screen">
                 </div>
-                <!-- Центральный телефон (Splash) -->
-                <div class="phone-composition phone-center">
-                    <img src="Warstwa 1.png" alt="Phone Frame" class="phone-frame">
-                    <img src="Warstwa 4.png" alt="Splash Screen" class="phone-screen">
+                <!-- Центральный телефон (Сплэш) -->
+                <div class="phone-wrapper center-phone">
+                    <img src="Warstwa 1.png" alt="Frame" class="phone-frame">
+                    <img src="Warstwa 4.png" alt="Splash UI" class="phone-screen">
                 </div>
-                <!-- Правый телефон (Player) -->
-                <div class="phone-composition phone-right">
-                    <img src="Warstwa 1 copy.png" alt="Phone Frame" class="phone-frame">
-                    <img src="Warstwa 3.png" alt="Player Screen" class="phone-screen">
+                <!-- Правый телефон (Плеер) -->
+                <div class="phone-wrapper right-phone">
+                    <img src="Warstwa 1 copy.png" alt="Frame" class="phone-frame">
+                    <img src="Warstwa 3.png" alt="Player UI" class="phone-screen">
                 </div>
             </div>
         </div>
@@ -65,13 +60,13 @@
 
     <!-- СЕКЦИЯ С НАУШНИКАМИ -->
     <section class="headphones-section">
-        <div class="container flex-row align-center">
+        <div class="container flex-row align-center space-between">
             <div class="headphones-img-wrapper">
                 <img src="Headphones.png" alt="Headphones" class="headphones-img">
             </div>
             <div class="headphones-content">
-                <img src="Coeluso is free PSD template.png" alt="Coeluso is free PSD template" class="section-title-img">
-                <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut fermentum condimentum massa, in sagittis dolor feugiat id. Morbi pharetra elit non lorem elementum iaculis. Curabitur aliquet lacus sit amet metus molestie ultrices vel in nibh. Sed sit amet feugiat turpis, ut bibendum velit. In et felis mauris.</p>
+                <img src="Coeluso is free PSD template.png" alt="Coeluso is free PSD template" class="section-title">
+                <p class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut fermentum condimentum massa, in sagittis dolor feugiat id. Morbi pharetra elit non lorem elementum iaculis. Curabitur aliquet lacus sit amet metus molestie ultrices vel in nibh. Sed sit amet feugiat turpis, ut bibendum velit. In et felis mauris.</p>
                 <button class="btn-outline">
                     <img src="View more.png" alt="View more">
                 </button>
@@ -83,44 +78,44 @@
     <section class="features-section">
         <div class="container">
             <div class="text-center">
-                <img src="Coeluso with a lot of features.png" alt="Coeluso with a lot of features" class="section-title-img center-img">
+                <img src="Coeluso with a lot of features.png" alt="Features" class="section-title center-title">
             </div>
             
             <div class="features-grid">
                 <!-- Левая колонка -->
-                <div class="features-col">
-                    <div class="feature-item text-right">
-                        <img src="Speaker.png" alt="Speaker" class="feature-icon">
-                        <img src="Lorem ipsum dolor sit amet Consectetur adipiscing elit. Ut fer.png" alt="Feature title" class="feature-title">
-                        <p class="text-muted small-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut fermentum condimentum massa, in sagittis dolor feugiat id. Morbi pharetra elit non lorem elementum iaculis.</p>
+                <div class="features-col left-col">
+                    <div class="feature-item">
+                        <img src="Speaker.png" alt="Icon" class="feature-icon">
+                        <img src="Lorem ipsum dolor sit amet Consectetur adipiscing elit. Ut fer.png" alt="Title" class="feature-title">
+                        <p class="text-small">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut fermentum condimentum massa, in sagittis dolor feugiat id. Morbi pharetra elit non lorem elementum iaculis.</p>
                     </div>
-                    <div class="feature-item text-right">
-                        <img src="Activity.png" alt="Activity" class="feature-icon">
-                        <img src="Lorem ipsum dolor sit amet Consectetur adipiscing elit. Ut fer-2.png" alt="Feature title" class="feature-title">
-                        <p class="text-muted small-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut fermentum condimentum massa, in sagittis dolor feugiat id. Morbi pharetra elit non lorem elementum iaculis.</p>
+                    <div class="feature-item">
+                        <img src="Activity.png" alt="Icon" class="feature-icon">
+                        <img src="Lorem ipsum dolor sit amet Consectetur adipiscing elit. Ut fer-2.png" alt="Title" class="feature-title">
+                        <p class="text-small">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut fermentum condimentum massa, in sagittis dolor feugiat id. Morbi pharetra elit non lorem elementum iaculis.</p>
                     </div>
                 </div>
 
                 <!-- Центральный телефон -->
                 <div class="features-center-phone">
-                    <img src="Ellipse 2 copy 4.png" alt="Phone Shadow" class="phone-shadow">
-                    <div class="phone-composition center-phone-img">
-                        <img src="Warstwa 1.png" alt="Phone Frame" class="phone-frame">
-                        <img src="Warstwa 4 copy.png" alt="Splash Screen" class="phone-screen">
+                    <img src="Ellipse 2 copy 4.png" alt="Shadow" class="phone-shadow">
+                    <div class="phone-wrapper">
+                        <img src="Warstwa 1.png" alt="Frame" class="phone-frame">
+                        <img src="Warstwa 4 copy.png" alt="Splash UI" class="phone-screen">
                     </div>
                 </div>
 
                 <!-- Правая колонка -->
-                <div class="features-col">
-                    <div class="feature-item text-left">
-                        <img src="Headphones-2.png" alt="Headphones" class="feature-icon">
-                        <img src="Lorem ipsum dolor sit amet Consectetur adipiscing elit. Ut ferm.png" alt="Feature title" class="feature-title">
-                        <p class="text-muted small-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut fermentum condimentum massa, in sagittis dolor feugiat id. Morbi pharetra elit non lorem elementum iaculis.</p>
+                <div class="features-col right-col">
+                    <div class="feature-item">
+                        <img src="Headphones-2.png" alt="Icon" class="feature-icon">
+                        <img src="Lorem ipsum dolor sit amet Consectetur adipiscing elit. Ut ferm.png" alt="Title" class="feature-title">
+                        <p class="text-small">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut fermentum condimentum massa, in sagittis dolor feugiat id. Morbi pharetra elit non lorem elementum iaculis.</p>
                     </div>
-                    <div class="feature-item text-left">
+                    <div class="feature-item">
                         <img src="Icon.png" alt="Icon" class="feature-icon">
-                        <img src="Lorem ipsum dolor sit amet Consectetur adipiscing elit. Ut ferm-3.png" alt="Feature title" class="feature-title">
-                        <p class="text-muted small-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut fermentum condimentum massa, in sagittis dolor feugiat id. Morbi pharetra elit non lorem elementum iaculis.</p>
+                        <img src="Lorem ipsum dolor sit amet Consectetur adipiscing elit. Ut ferm-3.png" alt="Title" class="feature-title">
+                        <p class="text-small">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut fermentum condimentum massa, in sagittis dolor feugiat id. Morbi pharetra elit non lorem elementum iaculis.</p>
                     </div>
                 </div>
             </div>
@@ -128,25 +123,26 @@
     </section>
 
     <!-- СЕКЦИЯ С НАКЛОНЕННЫМИ ТЕЛЕФОНАМИ -->
-    <section class="tilted-phones-section">
-        <div class="container flex-row align-center">
+    <section class="tilted-section">
+        <div class="container flex-row align-center space-between">
             <div class="tilted-content">
                 <img src="Icon.png" alt="Power Icon" class="power-icon">
-                <img src="Lorem ipsum dolor sit amet Consectetur adipiscing elit. Ut ferm-4.png" alt="Title" class="section-title-img left-align">
-                <p class="text-muted">Consectetur adipiscing elit. Ut fermentum condimentum massa, in sagittis dolor feugiat id. Morbi pharetra elit non lorem elementum iaculis. Consectetur adipiscing elit. Ut fermentum condimentum massa, in sagittis dolor feugiat id. Morbi pharetra elit non lorem elementum iaculis.</p>
+                <img src="Lorem ipsum dolor sit amet Consectetur adipiscing elit. Ut ferm-4.png" alt="Title" class="section-title tilted-title">
+                <p class="text">Consectetur adipiscing elit. Ut fermentum condimentum massa, in sagittis dolor feugiat id. Morbi pharetra elit non lorem elementum iaculis. Consectetur adipiscing elit. Ut fermentum condimentum massa, in sagittis dolor feugiat id. Morbi pharetra elit non lorem elementum iaculis.</p>
             </div>
-            <div class="tilted-img-wrapper">
-                <div class="phone-composition tilted-phone p1">
+            
+            <div class="tilted-phones-wrapper">
+                <div class="phone-wrapper tilted-phone tilt-1">
                     <img src="Warstwa 1.png" alt="Frame" class="phone-frame">
-                    <img src="Warstwa 3 copy.png" alt="Screen" class="phone-screen">
+                    <img src="Warstwa 2.png" alt="UI" class="phone-screen">
                 </div>
-                <div class="phone-composition tilted-phone p2">
+                <div class="phone-wrapper tilted-phone tilt-2">
                     <img src="Warstwa 1 copy.png" alt="Frame" class="phone-frame">
-                    <img src="Warstwa 4.png" alt="Screen" class="phone-screen">
+                    <img src="Warstwa 3.png" alt="UI" class="phone-screen">
                 </div>
-                <div class="phone-composition tilted-phone p3">
+                <div class="phone-wrapper tilted-phone tilt-3">
                     <img src="Warstwa 1.png" alt="Frame" class="phone-frame">
-                    <img src="Warstwa 2.png" alt="Screen" class="phone-screen">
+                    <img src="Warstwa 4.png" alt="UI" class="phone-screen">
                 </div>
             </div>
         </div>
@@ -154,58 +150,60 @@
 
     <!-- СЕКЦИЯ С ЦИТАТОЙ -->
     <section class="quote-section">
-        <div class="container text-center">
-            <img src="Consectetur adipiscing elit. Ut fermentum condimentum massa, in.png" alt="Quote" class="quote-text-img">
+        <div class="container text-center flex-column align-center">
+            <img src="Consectetur adipiscing elit. Ut fermentum condimentum massa, in.png" alt="Quote" class="quote-text">
             <div class="author-block">
-                <img src="Ellipse 2 copy 2.png" alt="Author Avatar" class="author-avatar">
-                <img src="Patryk Wasik, Graphic designer at SYMU.png" alt="Author Name" class="author-name-img">
+                <img src="Ellipse 2 copy 2.png" alt="Author" class="author-avatar">
+                <img src="Patryk Wasik, Graphic designer at SYMU.png" alt="Author Name" class="author-name">
             </div>
             <div class="pagination-dots">
                 <img src="Ellipse 1 copy.png" alt="dot" class="dot">
-                <img src="Ellipse 1.png" alt="dot" class="dot">
-                <img src="Ellipse 1-2.png" alt="dot" class="dot">
-                <img src="Ellipse 2 copy 3.png" alt="dot" class="dot active">
+                <img src="Ellipse 1 copy.png" alt="dot" class="dot">
+                <img src="Ellipse 1 copy.png" alt="dot" class="dot">
+                <img src="Ellipse 1-2.png" alt="dot active" class="dot active">
             </div>
         </div>
     </section>
 
     <!-- СЕКЦИЯ СКАЧИВАНИЯ -->
     <section class="download-section">
-        <div class="container text-center">
-            <img src="Vector Smart Object copy.png" alt="Decorative Logo" class="decor-logo">
-            <img src="Discover new music & stuff Consectetur adipiscing elit. Ut fer.png" alt="Discover new music" class="section-title-img center-img">
-            <p class="text-muted small-text">Consectetur adipiscing elit. Ut fermentum condimentum massa, in sagittis dolor feugiat id. Morbi pharetra elit non lorem elementum iaculis.</p>
+        <div class="container text-center flex-column align-center">
+            <img src="Vector Smart Object copy.png" alt="Logo Icon" class="download-logo-icon">
+            <img src="Discover new music & stuff Consectetur adipiscing elit. Ut fer.png" alt="Discover" class="section-title center-title">
+            <p class="text-small download-text">Consectetur adipiscing elit. Ut fermentum condimentum massa, in sagittis dolor feugiat id. Morbi pharetra elit non lorem elementum iaculis.</p>
             
             <div class="download-phones-wrapper">
                 <!-- Фоновые телефоны -->
                 <img src="Layer 5.png" alt="Bg Phone Left" class="bg-phone bg-phone-left">
                 <img src="Layer 1.png" alt="Bg Phone Right" class="bg-phone bg-phone-right">
+                
                 <!-- Передний телефон -->
-                <div class="phone-composition main-download-phone">
-                    <img src="Warstwa 1.png" alt="Phone Frame" class="phone-frame">
-                    <img src="Warstwa 4 copy.png" alt="Splash Screen" class="phone-screen">
+                <div class="phone-wrapper main-download-phone">
+                    <img src="Warstwa 1.png" alt="Frame" class="phone-frame">
+                    <img src="Warstwa 4 copy.png" alt="UI" class="phone-screen">
                 </div>
             </div>
 
             <button class="btn-outline download-btn">
-                <img src="Download our app.png" alt="Download our app">
+                <img src="Download our app.png" alt="Download">
             </button>
         </div>
     </section>
 
     <!-- ПОДВАЛ -->
     <footer class="footer">
-        <div class="container text-center">
-            <img src="Thanks for downloading our template!.png" alt="Thanks for downloading" class="footer-thanks">
-            <div class="footer-flex flex-row space-between align-center">
+        <div class="container text-center flex-column align-center">
+            <img src="Thanks for downloading our template!.png" alt="Thanks" class="footer-thanks">
+            
+            <div class="footer-bottom flex-row space-between align-center">
                 <ul class="footer-nav">
                     <li><a href="#">Homepage</a></li>
                     <li><a href="#">Services</a></li>
                     <li><a href="#">About Us</a></li>
                     <li><a href="#">Contact</a></li>
                 </ul>
-                <div class="copyright">
-                    <img src="www.symu.co.png" alt="www.symu.co">
+                <div class="footer-copyright flex-row align-center">
+                    <img src="www.symu.co.png" alt="symu.co" class="symu-logo">
                     <p>Copyright © 2015. All rights reserved by Coeluso</p>
                 </div>
             </div>
