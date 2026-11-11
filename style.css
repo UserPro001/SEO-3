@@ -1,0 +1,503 @@
+/* =========================================
+   БАЗОВЫЕ СТИЛИ И ПЕРЕМЕННЫЕ
+   ========================================= */
+:root {
+    --bg-dark: #111a38;
+    --bg-darker: #0b1226;
+    --text-main: #8a97b0;
+    --text-light: #ffffff;
+    --accent-red: #fc3c4f;
+    --font-main: 'Montserrat', sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--bg-dark);
+    color: var(--text-main);
+    font-family: var(--font-main);
+    line-height: 1.6;
+    overflow-x: hidden;
+}
+
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: var(--text-light);
+}
+
+/* Утилиты Flexbox */
+.flex-row { display: flex; }
+.align-center { align-items: center; }
+.space-between { justify-content: space-between; }
+.text-center { text-align: center; }
+.text-right { text-align: right; }
+.text-left { text-align: left; }
+.text-muted { color: var(--text-main); font-size: 14px; }
+.small-text { font-size: 12px; line-height: 1.8; margin-top: 15px; }
+
+/* =========================================
+   ШАПКА
+   ========================================= */
+.header {
+    padding: 30px 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 10;
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: var(--text-light);
+    font-size: 24px;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+.logo img {
+    width: 35px;
+}
+
+.burger-menu {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    cursor: pointer;
+}
+
+.burger-menu span {
+    display: block;
+    width: 25px;
+    height: 2px;
+    background-color: var(--text-light);
+    border-radius: 2px;
+}
+
+/* =========================================
+   ГЛАВНЫЙ ЭКРАН 1
+   ========================================= */
+.hero-text {
+    padding: 180px 0 80px;
+}
+
+.main-title-img {
+    max-width: 600px;
+    margin: 0 auto 20px;
+}
+
+.subtitle-img {
+    max-width: 550px;
+    margin: 0 auto 40px;
+    opacity: 0.8;
+}
+
+.btn-outline {
+    background: transparent;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 30px;
+    padding: 15px 40px;
+    cursor: pointer;
+    transition: border-color 0.3s, background 0.3s;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn-outline:hover {
+    border-color: var(--text-light);
+    background: rgba(255, 255, 255, 0.05);
+}
+
+/* =========================================
+   ГЛАВНЫЙ ЭКРАН 2 (ТЕЛЕФОНЫ)
+   ========================================= */
+.hero-phones {
+    padding: 50px 0 100px;
+    position: relative;
+}
+
+.phones-container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.bg-wave {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80%;
+    opacity: 0.3;
+    z-index: 1;
+}
+
+.bg-detail-1, .bg-detail-2 {
+    position: absolute;
+    opacity: 0.5;
+    z-index: 0;
+}
+.bg-detail-1 { top: 20%; left: 10%; }
+.bg-detail-2 { bottom: 20%; right: 10%; }
+
+.phones-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    position: relative;
+    z-index: 2;
+}
+
+/* Композиция телефона (Наложение слоев) */
+.phone-composition {
+    position: relative;
+    width: 280px; /* Базовая ширина */
+}
+
+.phone-frame {
+    position: relative;
+    z-index: 2;
+    width: 100%;
+    display: block;
+    pointer-events: none;
+}
+
+.phone-screen {
+    position: absolute;
+    top: 7.5%;
+    left: 6.5%;
+    width: 87%;
+    height: 85%;
+    z-index: 1;
+    border-radius: 25px; /* Скругление под экран */
+    object-fit: cover;
+}
+
+.phone-center {
+    width: 320px; /* Центральный телефон больше */
+    z-index: 3;
+}
+
+/* =========================================
+   СЕКЦИЯ С НАУШНИКАМИ
+   ========================================= */
+.headphones-section {
+    padding: 100px 0;
+}
+
+.headphones-img-wrapper {
+    flex: 1;
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+.headphones-img {
+    width: 120%;
+    margin-left: -20%;
+}
+
+.headphones-content {
+    flex: 1;
+    padding-left: 50px;
+}
+
+.section-title-img {
+    margin-bottom: 30px;
+}
+
+.left-align {
+    margin-left: 0;
+    margin-right: auto;
+}
+
+/* =========================================
+   СЕКЦИЯ С ОСОБЕННОСТЯМИ
+   ========================================= */
+.features-section {
+    padding: 100px 0;
+}
+
+.center-img {
+    margin: 0 auto 80px;
+}
+
+.features-grid {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.features-col {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+}
+
+.feature-item {
+    max-width: 300px;
+}
+
+.text-right .feature-item { margin-left: auto; }
+
+.feature-icon {
+    margin-bottom: 20px;
+    height: 40px;
+}
+
+.text-right .feature-icon { margin-left: auto; }
+.text-left .feature-icon { margin-right: auto; }
+
+.feature-title {
+    margin-bottom: 15px;
+    max-width: 100%;
+}
+
+.features-center-phone {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
+.center-phone-img {
+    width: 250px;
+    z-index: 2;
+}
+
+.phone-shadow {
+    position: absolute;
+    bottom: -50px;
+    width: 300px;
+    opacity: 0.5;
+    z-index: 1;
+}
+
+/* =========================================
+   СЕКЦИЯ С НАКЛОНЕННЫМИ ТЕЛЕФОНАМИ
+   ========================================= */
+.tilted-phones-section {
+    padding: 100px 0;
+}
+
+.tilted-content {
+    flex: 1;
+    padding-right: 50px;
+}
+
+.power-icon {
+    margin-bottom: 30px;
+    width: 30px;
+}
+
+.tilted-img-wrapper {
+    flex: 1;
+    position: relative;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.tilted-phone {
+    position: absolute;
+    width: 220px;
+}
+
+.p1 { transform: rotate(-25deg) translate(-80px, -40px); z-index: 1; }
+.p2 { transform: rotate(-10deg) translate(80px, 80px); z-index: 2; }
+.p3 { transform: rotate(-20deg) translate(-10px, 20px); z-index: 3; }
+
+/* =========================================
+   СЕКЦИЯ С ЦИТАТОЙ
+   ========================================= */
+.quote-section {
+    padding: 100px 0;
+    background-color: var(--bg-darker);
+}
+
+.quote-text-img {
+    max-width: 800px;
+    margin: 0 auto 40px;
+    display: block;
+}
+
+.author-block {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 40px;
+}
+
+.author-avatar {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.pagination-dots {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.dot {
+    width: 10px;
+    height: 10px;
+    opacity: 0.5;
+    cursor: pointer;
+}
+
+.dot.active { opacity: 1; }
+
+/* =========================================
+   СЕКЦИЯ СКАЧИВАНИЯ
+   ========================================= */
+.download-section {
+    padding: 100px 0;
+    position: relative;
+}
+
+.decor-logo {
+    width: 60px;
+    margin: 0 auto 30px;
+}
+
+.download-phones-wrapper {
+    position: relative;
+    height: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 50px 0;
+}
+
+.bg-phone {
+    position: absolute;
+    width: 220px;
+    opacity: 0.3;
+    border-radius: 30px;
+}
+
+.bg-phone-left { transform: translate(-200px, 20px); z-index: 1; }
+.bg-phone-right { transform: translate(200px, 20px); z-index: 1; }
+
+.main-download-phone {
+    position: relative;
+    width: 280px;
+    z-index: 3;
+}
+
+.download-btn { margin-top: 20px; }
+
+/* =========================================
+   ПОДВАЛ
+   ========================================= */
+.footer {
+    padding: 40px 0;
+    background-color: var(--bg-darker);
+}
+
+.footer-thanks {
+    margin: 0 auto 40px;
+    max-width: 400px;
+}
+
+.footer-flex {
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    padding-top: 30px;
+}
+
+.footer-nav {
+    display: flex;
+    list-style: none;
+    gap: 30px;
+    font-size: 13px;
+    font-weight: 600;
+}
+
+.footer-nav a { color: var(--text-main); }
+.footer-nav a:hover { color: var(--text-light); }
+
+.copyright {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    font-size: 13px;
+    color: var(--text-main);
+}
+
+.copyright img {
+    height: 20px;
+}
+
+/* =========================================
+   АДАПТИВНОСТЬ
+   ========================================= */
+@media (max-width: 992px) {
+    .hero-phones .phones-wrapper { gap: 10px; }
+    .phone-composition { width: 200px; }
+    .phone-center { width: 240px; }
+    
+    .headphones-img-wrapper, .headphones-content,
+    .tilted-content, .tilted-img-wrapper {
+        flex: 1 1 100%;
+        padding: 0;
+        margin-bottom: 50px;
+    }
+    
+    .flex-row { flex-direction: column; }
+
+    .features-grid { flex-direction: column; gap: 50px; }
+    
+    .features-col { text-align: center; }
+    .text-right, .text-left { text-align: center; }
+    .text-right .feature-icon, .text-left .feature-icon { margin: 0 auto 20px; }
+}
+
+@media (max-width: 768px) {
+    .hero-phones .phones-wrapper { flex-direction: column; }
+    .phone-center { order: -1; margin-bottom: 30px; }
+    
+    .header-container { flex-direction: column; gap: 20px; }
+    
+    .footer-flex { flex-direction: column; text-align: center; gap: 20px; }
+    .footer-nav { justify-content: center; flex-wrap: wrap; }
+    .copyright { flex-direction: column; justify-content: center; }
+}
