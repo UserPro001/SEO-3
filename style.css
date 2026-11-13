@@ -349,7 +349,7 @@ a:hover {
 }
 
 .left-col { 
-    align-items: flex-end; 
+    align-items: flex-start; 
     text-align: right; 
     padding-right: 40px; 
 }
