@@ -490,6 +490,19 @@ a:hover {
     margin-bottom: 40px;
 }
 
+.hand {
+ position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 90vw;
+    height: 90vh;
+    object-fit: contain;   /* вписывает картинку целиком, сохраняя пропорции */
+    opacity: 0.2;
+    z-index: 1;
+    pointer-events: none;
+}
+
 .author-block {
     display: flex;
     align-items: center;
