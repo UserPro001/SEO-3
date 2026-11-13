@@ -282,7 +282,7 @@ a:hover {
     gap: 70px;
 }
 
-.left-col { align-items: flex-end; text-align: right; padding-right: 40px; }
+.left-col { align-items: flex-end; text-align: right; padding-left: 40px; }
 .right-col { align-items: flex-start; text-align: left; padding-left: 40px; }
 
 .feature-item {
