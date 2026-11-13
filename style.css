@@ -101,8 +101,22 @@ a:hover {
     margin-bottom: 80px;
 }
 
+.logo {
+    display: flex;
+    align-items: center; /* Выравниваем картинки по вертикали */
+    gap: 15px; /* Отступ между первой и второй картинкой */
+}
+
+/* Стили для первой картинки */
 .logo img {
-    height: 30px;
+    height: 30px; /* Задаем фиксированную высоту для всех картинок */
+    width: auto;
+}
+
+/* Стили для второй картинки (на случай, если нужно что-то поменять отдельно) */
+.logo-extra {
+    height: 30px; 
+    width: auto;
 }
 
 .burger-menu {
