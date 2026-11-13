@@ -430,7 +430,7 @@ a:hover {
     margin-bottom: 15px;
 }
 
-.tilted-phones-wrapper {
+/*.tilted-phones-wrapper {
     flex: 1.2;
     position: relative;
     height: 450px;
@@ -442,6 +442,36 @@ a:hover {
 .tilted-phone {
     position: absolute;
     width: 450px;
+}
+*/
+.tilted-phones-wrapper {
+    flex: 1.2;
+    position: relative;
+    height: 450px;
+    display: flex;
+    justify-content: flex-end; /* Прижимаем контент вправо */
+    align-items: center;
+    
+    /* Если ваш сайт ограничен по ширине (например, max-width: 1200px), 
+       этот трюк «вытолкнет» картинку до самого края монитора: */
+    margin-right: calc(50% - 50vw); 
+}
+
+.tilted-phone {
+    position: absolute;
+    right: 0;               /* Прижимаем картинку к правому краю */
+    top: 50%;               /* Центрируем по вертикали... */
+    transform: translateY(-50%); /* ...так как absolute игнорирует align-items */
+    
+    /* Размеры: */
+    width: 100%;            /* Занимает всю доступную ширину правой колонки */
+    max-width: 700px;       /* Ограничитель, чтобы на огромных экранах картинка не стала гигантской (подберите под свой макет) */
+    height: auto;           /* Сохраняем пропорции */
+    
+    /* Чтобы картинка не наезжала на текст, даже если она большая, 
+       можно добавить объект-фит (если это тег img): */
+    object-fit: contain; 
+    object-position: right center; /* Прижимаем саму картинку внутри тега вправо */
 }
 
 /*.tilt { transform: rotate(-30deg) translate(-120px, -50px); z-index: 1; }*/
