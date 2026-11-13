@@ -129,7 +129,7 @@ a:hover {
 .burger-menu span {
     width: 25px;
     height: 2px;
-    background-color: var(--lightblue);
+    background-color: var(--white);
     border-radius: 2px;
 }
 
@@ -245,7 +245,7 @@ a:hover {
 
 .headphones-img {
     width: 130%;
-    margin-left: -15%;
+  /*  margin-left: -15%;*/
 }
 
 .headphones-content {
