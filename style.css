@@ -261,7 +261,7 @@ a:hover {
 /* =========================================
    СЕКЦИЯ С ОСОБЕННОСТЯМИ
    ========================================= */
-.features-section {
+/*.features-section {
     padding: 100px 0;
 }
 
@@ -321,7 +321,93 @@ a:hover {
     opacity: 0.6;
     z-index: 1;
 }
+*/
 
+.features-section {
+    padding: 100px 0;
+}
+
+.center-title {
+    margin: 0 auto 80px;
+    text-align: center; /* Чтобы заголовок стоял по центру */
+}
+
+.features-grid {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%; /* Важно, чтобы сетка занимала всю ширину */
+    max-width: 1200px; /* Ограничитель, чтобы на огромных экранах не разлеталось */
+    margin: 0 auto; /* Центрируем сетку */
+}
+
+.features-col {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 70px;
+}
+
+.left-col { 
+    align-items: flex-end; 
+    text-align: right; 
+    padding-right: 40px; 
+}
+
+.right-col { 
+    align-items: flex-start; 
+    text-align: left; 
+    padding-left: 40px; 
+}
+
+.feature-item {
+    max-width: 280px;
+    display: flex;
+    flex-direction: column;
+}
+
+.left-col .feature-item { align-items: flex-end; }
+.right-col .feature-item { align-items: flex-start; }
+
+.feature-icon {
+    height: 40px;
+    margin-bottom: 15px;
+}
+
+.feature-title {
+    margin-bottom: 10px;
+}
+
+/* --- ЦЕНТРАЛЬНЫЙ БЛОК С ТЕЛЕФОНОМ --- */
+.features-center-phone {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    /* Добавим высоту, чтобы телефон не схлопывался, если картинки не загрузятся */
+    min-height: 500px; 
+}
+
+.features-center-phone .phone-wrapper {
+    width: 100%;
+    max-width: 240px; /* Телефон не больше 240px */
+    position: relative;
+    z-index: 2; /* Телефон поверх тени */
+    display: block;
+}
+
+.phone-shadow {
+    position: absolute;
+    bottom: 0px; /* Подберите значение, чтобы тень была ровно под телефоном */
+    left: 50%; /* Центрируем тень по горизонтали */
+    transform: translateX(-50%); /* Сдвигаем ровно на половину её ширины */
+    width: 100%;
+    max-width: 400px;
+    opacity: 0.6;
+    z-index: 1; /* Тень позади телефона */
+    pointer-events: none; /* Чтобы тень не мешала кликам */
+}
 /* =========================================
    СЕКЦИЯ С НАКЛОНЕННЫМИ ТЕЛЕФОНАМИ
    ========================================= */
