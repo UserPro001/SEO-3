@@ -129,7 +129,7 @@ a:hover {
 .burger-menu span {
     width: 25px;
     height: 2px;
-    background-color: var(--white);
+    background-color: var(--blue);
     border-radius: 2px;
 }
 
