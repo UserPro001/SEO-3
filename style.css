@@ -351,7 +351,7 @@ a:hover {
 .left-col { 
     align-items: flex-end; 
     text-align: left; 
-    padding-right: 40px; 
+    padding-left: 40px; 
 }
 
 .right-col { 
