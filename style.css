@@ -129,7 +129,7 @@ a:hover {
 .burger-menu span {
     width: 25px;
     height: 2px;
-    background-color: var(--blue);
+    background-color: var(--lightblue);
     border-radius: 2px;
 }
 
@@ -164,16 +164,20 @@ a:hover {
     justify-content: center;
 }
 
+
 .bg-wave {
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 90%;
-    opacity: 0.4;
+    width: 90vw;
+    height: 90vh;
+    object-fit: contain;   /* вписывает картинку целиком, сохраняя пропорции */
+    opacity: 0.2;
     z-index: 1;
     pointer-events: none;
 }
+
 
 .bg-detail {
     position: absolute;
@@ -187,7 +191,7 @@ a:hover {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 20px;
+    gap: 60px;
     position: relative;
     z-index: 2;
 }
