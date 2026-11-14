@@ -606,7 +606,7 @@ a:hover {
 .bg-phone {
     position: absolute;
     width: 220px;
-    opacity: 0.2;
+    opacity: 0.6;
     filter: blur(2px);
 }
 
