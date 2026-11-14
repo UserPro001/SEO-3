@@ -597,7 +597,6 @@ a:hover {
     position: absolute;
     width: 220px;
     opacity: 0.6;
-    filter: blur(2px);
 }
 
 .bg-phone-left { transform: translate(-180px, 20px); z-index: 1; }
