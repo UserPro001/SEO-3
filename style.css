@@ -235,29 +235,40 @@ a:hover {
    ========================================= */
 .headphones-section {
     padding: 100px 0;
+    /* Убедитесь, что у секции или её контейнера нет display: flex, 
+       если он есть — он должен быть flex-direction: row */
 }
 
 .headphones-img-wrapper {
-    flex: 1.2;
+    flex: 1; /* Делаем колонку ровно на половину (или оставьте 1.2 для пропорций) */
     display: flex;
     justify-content: flex-start;
+    align-items: center;
+    
+    /* ГЛАВНЫЙ ТРЮК: Выталкиваем картинку до самого левого края экрана */
+    margin-left: calc(50% - 50vw); 
 }
 
 .headphones-img {
-    width: 130%;
-  /*  margin-left: -15%;*/
+    width: 100%;       /* Картинка занимает всю ширину своей левой колонки */
+    max-width: 100%;   /* Запрещаем вылезать за пределы колонки */
+    height: auto;      /* Сохраняем пропорции */
+    object-fit: contain; /* Если это <img>, картинка впишется в блок без искажений */
+    display: block;
 }
 
 .headphones-content {
     flex: 1;
-    padding-left: 40px;
+    padding-left: 60px; /* Увеличил отступ, чтобы текст не прилипал к картинке */
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Центрируем текст по вертикали относительно картинки */
 }
 
 .section-title {
     margin-bottom: 25px;
     max-width: 100%;
 }
-
 /* =========================================
    СЕКЦИЯ С ОСОБЕННОСТЯМИ
    ========================================= */
