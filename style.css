@@ -516,7 +516,7 @@ a:hover {
     width: 100%;
     height: 100%;
     object-fit: cover; /* Картинка заполнит весь блок без искажений пропорций */
-    opacity: 0.2;
+    opacity: 0.1;
     z-index: 1;        
     pointer-events: none;
 }
@@ -558,7 +558,7 @@ a:hover {
 .dot {
     width: 10px;
     height: 10px;
-    opacity: 0.4;
+    opacity: 0.6;
     flex-shrink: 0; /* Запрещаем точкам сжиматься */
     border-radius: 50%; /* На случай, если края картинок квадратные */
 }
