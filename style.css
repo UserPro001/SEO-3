@@ -103,17 +103,17 @@ a:hover {
 
 .logo {
     display: flex;
-    align-items: center; /* Выравниваем картинки по вертикали */
-    gap: 15px; /* Отступ между первой и второй картинкой */
+    align-items: center; 
+    gap: 15px; 
 }
 
 /* Стили для первой картинки */
 .logo img {
-    height: 40px; /* Задаем фиксированную высоту для всех картинок */
+    height: 40px;
     width: auto;
 }
 
-/* Стили для второй картинки (на случай, если нужно что-то поменять отдельно) */
+/* Стили для второй картинки */
 .logo img.logo-extra {
     height: 20px; 
     width: auto;
@@ -164,20 +164,6 @@ a:hover {
     justify-content: center;
 }
 
-
-/*bg-wave {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 90vw;
-    height: 90vh;
-    object-fit: contain;   
-    opacity: 0.2;
-    z-index: 1;
-    pointer-events: none;
-}*/
-
 .bg-wave {
     position: absolute;
     top: 50%;
@@ -196,6 +182,7 @@ a:hover {
     opacity: 0.3;
     z-index: 0;
 }
+
 .bg-detail-1 { top: 10%; left: -5%; width: 150px; }
 .bg-detail-2 { bottom: 10%; right: -5%; width: 150px; }
 
@@ -247,12 +234,10 @@ a:hover {
    ========================================= */
 .headphones-section {
     padding: 100px 0;
-    /* Убедитесь, что у секции или её контейнера нет display: flex, 
-       если он есть — он должен быть flex-direction: row */
 }
 
 .headphones-img-wrapper {
-    flex: 1; /* Делаем колонку ровно на половину (или оставьте 1.2 для пропорций) */
+    flex: 1; 
     display: flex;
     justify-content: flex-start;
     align-items: center;
@@ -260,19 +245,19 @@ a:hover {
 }
 
 .headphones-img {
-    width: 100%;       /* Картинка занимает всю ширину своей левой колонки */
-    max-width: 100%;   /* Запрещаем вылезать за пределы колонки */
-    height: auto;      /* Сохраняем пропорции */
-    object-fit: contain; /* Если это <img>, картинка впишется в блок без искажений */
+    width: 100%;       
+    max-width: 100%;   
+    height: auto;      
+    object-fit: contain; 
     display: block;
 }
 
 .headphones-content {
     flex: 1;
-    padding-left: 60px; /* Увеличил отступ, чтобы текст не прилипал к картинке */
+    padding-left: 60px; 
     display: flex;
     flex-direction: column;
-    justify-content: center; /* Центрируем текст по вертикали относительно картинки */
+    justify-content: center; 
 }
 
 .section-title {
@@ -282,67 +267,6 @@ a:hover {
 /* =========================================
    СЕКЦИЯ С ОСОБЕННОСТЯМИ
    ========================================= */
-/*.features-section {
-    padding: 100px 0;
-}
-
-.center-title {
-    margin: 0 auto 80px;
-}
-
-.features-grid {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.features-col {
-    flex: 1;
-    display: flex;
-    flex-direction: column;
-    gap: 70px;
-}
-
-.left-col { align-items: flex-end; text-align: right; padding-right: 40px; }
-.right-col { align-items: flex-start; text-align: left; padding-left: 40px; }
-
-.feature-item {
-    max-width: 280px;
-    display: flex;
-    flex-direction: column;
-}
-
-.left-col .feature-item { align-items: flex-end; }
-.right-col .feature-item { align-items: flex-start; }
-
-.feature-icon {
-    height: 40px;
-    margin-bottom: 15px;
-}
-
-.feature-title {
-    margin-bottom: 10px;
-}
-
-.features-center-phone {
-    flex: 1;
-    display: flex;
-    justify-content: center;
-    position: relative;
-}
-
-.features-center-phone .phone-wrapper {
-    width: 240px;
-}
-
-.phone-shadow {
-    position: absolute;
-    bottom: -40px;
-    width: 400px;
-    opacity: 0.6;
-    z-index: 1;
-}
-*/
 
 .features-section {
     padding: 100px 0;
@@ -350,16 +274,16 @@ a:hover {
 
 .center-title {
     margin: 0 auto 80px;
-    text-align: center; /* Чтобы заголовок стоял по центру */
+    text-align: center; 
 }
 
 .features-grid {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 100%; /* Важно, чтобы сетка занимала всю ширину */
-    max-width: 1200px; /* Ограничитель, чтобы на огромных экранах не разлеталось */
-    margin: 0 auto; /* Центрируем сетку */
+    width: 100%; 
+    max-width: 1200px; 
+    margin: 0 auto; 
 }
 
 .features-col {
@@ -407,29 +331,29 @@ a:hover {
     justify-content: center;
     align-items: center;
     position: relative;
-    /* Добавим высоту, чтобы телефон не схлопывался, если картинки не загрузятся */
     min-height: 500px; 
 }
 
 .features-center-phone .phone-wrapper {
     width: 100%;
-    max-width: 240px; /* Телефон не больше 240px */
+    max-width: 240px; 
     position: relative;
-    z-index: 2; /* Телефон поверх тени */
+    z-index: 2; 
     display: block;
 }
 
 .phone-shadow {
     position: absolute;
-    bottom: 0px; /* Подберите значение, чтобы тень была ровно под телефоном */
-    left: 50%; /* Центрируем тень по горизонтали */
-    transform: translateX(-50%); /* Сдвигаем ровно на половину её ширины */
+    bottom: 0px; 
+    left: 50%; 
+    transform: translateX(-50%); 
     width: 100%;
     max-width: 400px;
     opacity: 0.6;
-    z-index: 1; /* Тень позади телефона */
-    pointer-events: none; /* Чтобы тень не мешала кликам */
+    z-index: 1; 
+    pointer-events: none; 
 }
+
 /* =========================================
    СЕКЦИЯ С НАКЛОНЕННЫМИ ТЕЛЕФОНАМИ
    ========================================= */
@@ -451,51 +375,27 @@ a:hover {
     margin-bottom: 15px;
 }
 
-/*.tilted-phones-wrapper {
-    flex: 1.2;
-    position: relative;
-    height: 450px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.tilted-phone {
-    position: absolute;
-    width: 450px;
-}
-*/
 .tilted-phones-wrapper {
     flex: 1.2;
     position: relative;
     height: 450px;
     display: flex;
-    justify-content: flex-end; /* Прижимаем контент вправо */
+    justify-content: flex-end; 
     align-items: center;
-    
-    /* Если ваш сайт ограничен по ширине (например, max-width: 1200px), 
-       этот трюк «вытолкнет» картинку до самого края монитора: */
     margin-right: calc(50% - 50vw); 
 }
 
 .tilted-phone {
     position: absolute;
-    right: 0;               /* Прижимаем картинку к правому краю */
-    top: 50%;               /* Центрируем по вертикали... */
-    transform: translateY(-50%); /* ...так как absolute игнорирует align-items */
-    
-    /* Размеры: */
-    width: 100%;            /* Занимает всю доступную ширину правой колонки */
-    max-width: 700px;       /* Ограничитель, чтобы на огромных экранах картинка не стала гигантской (подберите под свой макет) */
-    height: auto;           /* Сохраняем пропорции */
-    
-    /* Чтобы картинка не наезжала на текст, даже если она большая, 
-       можно добавить объект-фит (если это тег img): */
+    right: 0;              
+    top: 50%;              
+    transform: translateY(-50%); 
+    width: 100%;            
+    max-width: 700px;       
+    height: auto;          
     object-fit: contain; 
-    object-position: right center; /* Прижимаем саму картинку внутри тега вправо */
+    object-position: right center; 
 }
-
-/*.tilt { transform: rotate(-30deg) translate(-120px, -50px); z-index: 1; }*/
 
 
 /* =========================================
@@ -508,20 +408,20 @@ a:hover {
     overflow: hidden; 
 }
 
-/* Настройка фоновой картинки */
+
 .hand {
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    object-fit: cover; /* Картинка заполнит весь блок без искажений пропорций */
+    object-fit: cover;
     opacity: 0.1;
     z-index: 1;        
     pointer-events: none;
 }
 
-/* Контент всегда поверх картинки */
+
 .quote-section .container {
     position: relative;
     z-index: 2; 
@@ -546,26 +446,26 @@ a:hover {
     border-radius: 50%;
 }
 
-/* Точки пагинации */
 .pagination-dots {
     display: flex;
-    flex-direction: row; /* Жестко задаем строку */
+    flex-direction: row; 
     justify-content: center;
     align-items: center;
-    gap: 10px; /* Расстояние между точками */
+    gap: 10px; 
 }
 
 .dot {
     width: 10px;
     height: 10px;
     opacity: 0.6;
-    flex-shrink: 0; /* Запрещаем точкам сжиматься */
-    border-radius: 50%; /* На случай, если края картинок квадратные */
+    flex-shrink: 0; 
+    border-radius: 50%; 
 }
 
 .dot.active {
     opacity: 1;
 }
+
 /* =========================================
    СЕКЦИЯ СКАЧИВАНИЯ
    ========================================= */
@@ -614,11 +514,6 @@ a:hover {
     padding: 60px 0 40px;
 }
 
-/*.footer-thanks {
-    max-width: 400px;
-    margin: 0 auto 50px;
-}*/
-
 .footer-bottom {
     width: 100%;
     border-top: 1px solid rgba(255, 255, 255, 0.05);
@@ -632,12 +527,6 @@ a:hover {
     font-size: 12px;
     font-weight: 600;
 }
-
-/*.footer-nav a {
-    color: rgba(255, 255, 255, 0.4);
-    text-transform: uppercase;
-}
-*/
    
 .footer-copyright {
     font-size: 12px;
@@ -684,7 +573,7 @@ a:hover {
 @media (max-width: 768px) {
     .phones-row { flex-direction: column; }
     .center-phone { order: -1; margin-bottom: 30px; }
-    .left-phone, .right-phone { display: none; } /* Скрываем лишние телефоны на мобилках */
+    .left-phone, .right-phone { display: none; } 
     
     .footer-bottom { flex-direction: column; gap: 20px; }
     .footer-nav { justify-content: center; flex-wrap: wrap; }
